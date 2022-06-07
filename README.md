@@ -16,7 +16,7 @@ Baekjoon Online Judge
 ## requirements
    ```
    1. Deep-Discussion/BOJ 스터디 저장소 Fork
-   2. 본인의 스터디 저장소를 Clone (로컬의 저장소 폴더가 생성됨)
+   2. 본인의 스터디 저장소를 Clone (로컬의 저장소 폴더가 생성됩니다.)
    $ git clone https://github.com/[자신의 계정이름]/BOJ.git
    3. Deep-Discussion/BOJ의 스터디 저장소와 동기화 (변경된 내역을 나의 저장소에도 일치시켜주는 작업)
    
@@ -68,3 +68,5 @@ Baekjoon Online Judge
 2. 작성한 코드를 자신의 이름 폴더에 저장합니다.
 3. 저장한 파일을 개인별 Fork한 Repo의 main으로 PUSH합니다.
 4. 개인별 깃허브 Repo에 PUSH된 main Branch를 스터디 팀 BOJ 저장소의 main Branch로 PR를 요청합니다.
+
+
