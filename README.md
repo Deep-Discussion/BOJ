@@ -36,7 +36,7 @@ Baekjoon Online Judge
 
    7. 코드작업 진행 (파일명 : BOJ_0000번문제.py)
    
-   7.5 코드 작업이 끝나고 다시 pull을 받아온다.
+   7.5 코드 작업이 끝나고 다시 pull을 받아옵니다.
    # 코드 작업중 누군가가 새로운 파일을 push할 가능성이 있으므로 최신화 합니다.
    $ git pull upstream main
    
