@@ -33,8 +33,7 @@ def rain_water(_vh: str, _blocks: str) -> None:
                 res = check_is_hole(blocks, j)
                 total += res
                 blocks[j] += res
-    return total
+    print(total)
 
 
-answer = rain_water(input(), input())
-print(answer)
+rain_water(input(), input())
