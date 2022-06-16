@@ -64,9 +64,11 @@ Baekjoon Online Judge
 
 
 ## workflow
-1. 오늘의 추천 문제 4개 중 하나의 문제를 선택합니다. ->   [오늘의 문제](https://github.com/tony9402/baekjoon/blob/41dd04f3f938599e3a70481ca8ef79e154b4c0ed/picked.md) 
-2. 작성한 코드를 자신의 이름 폴더에 저장합니다.
-3. 저장한 파일을 개인별 Fork한 Repo의 main으로 PUSH합니다.
-4. 개인별 깃허브 Repo에 PUSH된 main Branch를 스터디 팀 BOJ 저장소의 main Branch로 PR를 요청합니다.
+1. 오늘의 추천 문제 4개 중 하나의 문제를 선택합니다. ->   [오늘의 문제](https://github.com/tony9402/baekjoon/blob/main/picked.md) 
+   : BOJ 레포지토리 오늘의 문제는 올라오는 시간이 당일 랜덤이라
+   하루 전날 문제를 풀기 시작해주세요 ( 2022-06-12일이라면 2022-06-11의 오늘의 문제를 풉니다 )
+3. 작성한 코드를 자신의 이름 폴더에 저장합니다.
+4. 저장한 파일을 개인별 Fork한 Repo의 main으로 PUSH합니다.
+5. 개인별 깃허브 Repo에 PUSH된 main Branch를 스터디 팀 BOJ 저장소의 main Branch로 PR를 요청합니다.
 
 
