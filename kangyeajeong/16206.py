@@ -1,14 +1,7 @@
-#재현이 욕심많음 -그리디 알고리즘
-#롤케이크 
-
-#최대값을 찾는 알고리즘이다.
-
-#값을 입력받고
-N, chop = list(map(int,input().split()));
-cakes = list(map(int,input().split()));
-#자르고
-
-jeahyonCakes = 0;
+#BOJ_16206 롤케이크
+#재현이 욕심많음 
+#그리디 알고리즘
+#최대값을 찾아야 하는 문제다
 
 #if 10이 들어올 때, 
 #자르지 않고 count 그대로
@@ -22,6 +15,15 @@ jeahyonCakes = 0;
 
 #a문제는 케이크를 자를 수 있는 최대횟수를 찾으라고 하고 있음.
 # 10의 배수인 값들만 미리 뽑아서 => 계산후에, 나머지 계산하기
+
+
+#값을 입력받음
+
+N, chop = list(map(int,input().split()));
+cakes = list(map(int,input().split()));
+
+jeahyonCakes = 0;
+
 
 #최대값을 구하기 위해 데이터 전처리
 

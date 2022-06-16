@@ -20,7 +20,7 @@ def maxBall(balls, sum) :
             max = sum;
         return ;
 
-    for i in range (1, len(balls)-1) :
+    for i in range (1, len(balls)-1) :  #중간에 for문으로 돌리는걸 잊었다. 함수 내에서 하면 됨
         weight = balls[i-1] * balls[i+1];
         val = balls.pop(i);
         maxBall(balls, i, sum + weight);
