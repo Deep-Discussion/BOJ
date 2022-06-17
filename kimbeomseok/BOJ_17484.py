@@ -1,5 +1,5 @@
 def moon_travel(height, width, area) -> int:
-    answer = float('inf')
+    answer = 101
 
     def move(weight: int, x: int, y: int, result: int):
         nonlocal answer, height, width, area

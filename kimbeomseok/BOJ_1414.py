@@ -9,13 +9,13 @@ def init_weight(char: str) -> int:
     return 0
 
 
-def find(parent, x) -> int:
+def find(parent: List[int], x: int) -> int:
     if parent[x] != x:
         parent[x] = find(parent, parent[x])
     return parent[x]
 
 
-def union(parent, a, b) -> None:
+def union(parent: List[int], a: int, b: int) -> None:
     a = find(parent, a)
     b = find(parent, b)
     if a < b:
@@ -59,5 +59,7 @@ def help_the_poor(size: int, cables: List[str]) -> None:
         return
     else:
         print(total_weight - minimum_weight)
+
+
 n = int(input())
 help_the_poor(n, [input() for _ in range(n)])
