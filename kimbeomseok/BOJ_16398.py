@@ -26,16 +26,16 @@ def planet_connection(n: int, _planets: List[str]) -> None:
         for j in range(i + 1, n):
             edges.append((planets[i][j], i, j))
     edges.sort()
-    
+
     for edge in edges:
         cost, a, b = edge
         if find(parent, a) != find(parent, b):
             union(parent, a, b)
             minimum_flow += cost
-        
+
     print(minimum_flow)
 
-    
+
 N = int(input())
 arr = []
 for _ in range(N):
