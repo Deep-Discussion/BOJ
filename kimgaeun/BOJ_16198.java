@@ -23,7 +23,6 @@ class BOJ_16198 {
     public static void dfs(int n, ArrayList<Integer> marbles, int sum){
         
         if(n == 2){
-            System.out.println("@ " + sum + " energy " + energy);
             energy = Math.max(energy,sum);
             return;
         }
@@ -32,7 +31,7 @@ class BOJ_16198 {
             
             int mul = marbles.get(i-1)*marbles.get(i+1);
             int cur = marbles.get(i);
-            System.out.println("i "+cur+" sum " + sum);
+            // System.out.println("i "+cur+" sum " + sum);
             marbles.remove(i);
             
             dfs(n-1, marbles, sum+mul);
