@@ -1,50 +1,28 @@
-from copy import deepcopy
-from typing import List
-
-
 def n_queen(n: int) -> None:
-    dx = [-1, -1, -1]
-    dy = [-1, 0, 1]
-    board = [[0] * n for _ in range(n)]
     ans = 0
+    row = [0] * n
+    visited = [False] * n
 
-    def check_is_valid_direction(x: int, y: int, d_num: int, board: List[List[int]]) -> bool:
-        nonlocal n
+    def check_is_valid_direction(x) -> bool:
+        for i in range(x):
+            if row[x] == row[i] or abs(row[x] - row[i]) == abs(x - i):
+                return False
+        return True
 
-        if not (0 <= x < n and 0 <= y < n):
-            return True
+    def solve(x: int) -> None:
+        nonlocal ans, n, visited
 
-        if board[x][y] == 1:
-            return False
-
-        return check_is_valid_direction(x + dx[d_num], y + dy[d_num], d_num, board)
-
-    def solve(board: List[List[int]], x: int, y: int, c: int) -> bool:
-        nonlocal ans, n
-
-        nx = x + 1
-        if nx == n:
+        if n == x:
             ans += 1
             return
 
         for i in range(n):
-            if y == i or y - 1 == i or y + 1 == i:
-                continue
+            # [x, i]에 퀸을 놓는다.
+            row[x] = i
+            if check_is_valid_direction(x):
+                visited[i] = True
+                solve(x + 1)
+                visited[i] = False
 
-            is_valid = True
-            for j in range(3):
-
-                if not check_is_valid_direction(nx, i, j, board):
-                    is_valid = False
-
-            if is_valid:
-                _board = deepcopy(board)
-                _board[nx][i] = 1
-                solve(_board, nx, i, c + 1)
-
-    for j in range(n):
-        temp = deepcopy(board)
-        temp[0][j] = 1
-        solve(temp, 0, j, 1)
-
+    solve(0)
     print(ans)
