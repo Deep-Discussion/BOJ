@@ -1,4 +1,4 @@
-
+#피보나치 수 7
 import sys
 
 n = int(sys.stdin.readline());
