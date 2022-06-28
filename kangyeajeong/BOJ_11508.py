@@ -16,7 +16,6 @@ dairy = list(map(int,(sys.stdin.read().splitlines())));
 dairy.sort(reverse=True);
 
 #3팩씩 나누고 0번째 1번째만 추가하기
-
 count = 0 ;
 for i in range(len(dairy)) :
     if( count ==2 ) :
