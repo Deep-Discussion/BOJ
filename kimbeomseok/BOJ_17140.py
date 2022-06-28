@@ -1,17 +1,19 @@
 import itertools
 import sys
-from typing import List
+from typing import Dict, Iterable, List
+
 input = sys.stdin.readline
 
 
-def exchange_xy(array: List[List[int]]) -> List[List[int]]:
+
+def exchange_xy(array: Iterable[List[int]]) -> List[List[int]]:
     return list(itertools.zip_longest(*array, fillvalue=0))
 
 
 def extract(array: List[List[int]]) -> List[List[int]]:
     result = []
     for i in range(len(array)):
-        counter = {}
+        counter: Dict[int, int] = {}
         for j in range(len(array[0])):
             if array[i][j] == 0:
                 continue
@@ -63,6 +65,7 @@ def two_dimensional_operation(r: int, c: int, k: int, array: List[List[int]]) ->
 
         count += 1
     print(count)
+
 
 
 R, C, K = map(int, input().split())
